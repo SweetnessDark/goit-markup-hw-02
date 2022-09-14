@@ -1,0 +1,249 @@
+/* Resetting Styles */
+* {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+/* .header {
+
+} */
+
+.logo-link,
+.logo-link span {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo-link {
+    color: #000;
+}
+
+.logo-link span {
+    color: #2196F3;
+}
+
+/* .nav {
+
+} */
+
+.navigation a {
+    color: #212121;
+}
+
+.navigation a,
+.contacts a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+
+.navigation a:hover,
+.navigation a:focus,
+.contacts a:hover,
+.contacts a:focus {
+    color: #2196F3;
+}
+
+/* .contacts {
+
+} */
+
+.contacts a {
+    color: #757575;
+}
+
+/* ---------------------------------------- INDEX.HTML------------------------------------ */
+
+/* Section Banner */
+
+.banner {
+    background-color: #2F303A;
+}
+
+.banner h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.banner-btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    color: #212121;
+}
+
+.banner-btn:hover,
+.banner-btn:focus {
+    background-color: #2196F3;
+    color: #fff;
+}
+
+/* Section About Company */
+
+/* .about-company {
+
+} */
+
+.about-company h2 {
+    display: none;
+}
+
+/* .description {
+
+} */
+
+.description h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+}
+
+.description p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+/* Section Our Work */
+
+/* .our-work {
+    
+} */
+
+.our-work h2,
+.team h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+/* Section Team */
+
+/* .team {
+
+} */
+
+.team h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.team p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+/* ---------------------------------------- PORTFOLIO.HTML------------------------------------ */
+
+/* Section Products */
+
+/* .products {
+
+} */
+
+/* .tabs {
+
+} */
+
+.tabs_items input {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    color: #212121;
+}
+
+.tabs_items input:hover,
+.tabs_items input:focus {
+    background-color: #2196F3;
+    color: #fff;
+}
+
+.tabs-block {
+    border: 1px #eee;
+}
+
+.tabs-block h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+
+.tabs-block p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #2F303A;
+}
+
+.logo-link2,
+.logo-link2 span {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo-link2 {
+    color: #fff;
+}
+
+.logo-link2 span {
+    color: #2196F3;
+}
+
+.address-link a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
