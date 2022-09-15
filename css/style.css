@@ -1,9 +1,21 @@
+/* Variables */
+
+:root {
+    --color-blue: #2196F3;
+    --color-black: #000;
+    --color-white: #fff;
+    --color-dark: #212121;
+    --color-gray: #757575;
+    --color-dark-gray: #2F303A;
+    --color-white-gray: #F5F4FA;
+}
+
 /* Resetting Styles */
+/* Не работает с тегом body */
 * {
     font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    list-style: none;
-    text-decoration: none;
+    font-size: 14px;
+    color: var(--color-black);
     margin: 0;
     padding: 0;
 }
@@ -20,46 +32,58 @@
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 0.03em;
+    line-height: 31px;
+    text-decoration: none;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .logo-link {
-    color: #000;
+    color: var(--color-black);
 }
 
 .logo-link span {
-    color: #2196F3;
+    color: var(--color-blue);
 }
 
 /* .nav {
-
+    
 } */
 
-.navigation a {
-    color: #212121;
+.navigation {
+    list-style: none;
 }
 
-.navigation a,
-.contacts a {
+.nav-link {
+    color: var(--color-dark);
+}
+
+.nav-link,
+.contact-link {
+    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
-.navigation a:hover,
-.navigation a:focus,
-.contacts a:hover,
-.contacts a:focus {
-    color: #2196F3;
+.nav-link:hover,
+.nav-link:focus,
+.contact-link:hover,
+.contact-link:focus {
+    color: var(--color-blue);
 }
 
-/* .contacts {
+.current {
+    color: var(--color-blue);
+}
 
-} */
+.contacts {
+    list-style: none;
+}
 
-.contacts a {
-    color: #757575;
+.contact-link {
+    color: var(--color-gray);
 }
 
 /* ---------------------------------------- INDEX.HTML------------------------------------ */
@@ -67,17 +91,17 @@
 /* Section Banner */
 
 .banner {
-    background-color: #2F303A;
+    background-color: var(--color-dark-gray);
 }
 
-.banner h1 {
+.heading-banner {
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--color-white);
 }
 
 .banner-btn {
@@ -88,14 +112,14 @@
     border: none;
     cursor: pointer;
     border-radius: 4px;
-    background-color: #F5F4FA;
-    color: #212121;
+    background-color: var(--color-white-gray);
+    color: var(--color-dark);
 }
 
 .banner-btn:hover,
 .banner-btn:focus {
-    background-color: #2196F3;
-    color: #fff;
+    background-color: var(--color-blue);
+    color: var(--color-white);
 }
 
 /* Section About Company */
@@ -108,25 +132,25 @@
     display: none;
 }
 
-/* .description {
+.description {
+    list-style: none;
+}
 
-} */
-
-.description h3 {
+.headings-description {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #212121;
+    color: var(--color-dark);
 }
 
-.description p {
+.text {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--color-gray);
 }
 
 /* Section Our Work */
@@ -135,14 +159,17 @@
     
 } */
 
-.our-work h2,
-.team h2 {
+.headings-section {
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--color-dark);
+}
+
+.pictures {
+    list-style: none;
 }
 
 /* Section Team */
@@ -151,20 +178,24 @@
 
 } */
 
-.team h3 {
+.description-team {
+    list-style: none;
+}
+
+.name {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--color-dark);
 }
 
-.team p {
+.profession {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--color-gray);
 }
 
 /* ---------------------------------------- PORTFOLIO.HTML------------------------------------ */
@@ -175,11 +206,19 @@
 
 } */
 
+.products h1 {
+    display: none;
+}
+
 /* .tabs {
 
 } */
 
-.tabs_items input {
+.tabs-items {
+    list-style: none;
+}
+
+.btn-tabs {
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
@@ -187,40 +226,40 @@
     border: none;
     cursor: pointer;
     border-radius: 4px;
-    background-color: #F5F4FA;
-    color: #212121;
+    background-color: var(--color-white-gray);
+    color: var(--color-dark);
 }
 
-.tabs_items input:hover,
-.tabs_items input:focus {
-    background-color: #2196F3;
-    color: #fff;
+.btn-tabs:hover,
+.btn-tabs:focus {
+    background-color: var(--color-blue);
+    color: var(--color-white);
 }
 
-.tabs-block {
-    border: 1px #eee;
+.product-item {
+    list-style: none;
 }
 
-.tabs-block h3 {
+.headings-product {
     font-weight: 700;
     font-size: 18px;
     line-height: 36px;
     letter-spacing: 0.06em;
-    color: #212121;
+    color: var(--color-dark);
 }
 
-.tabs-block p {
+.text-product {
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--color-gray);
 }
 
 /* Footer */
 
 .footer {
-    background-color: #2F303A;
+    background-color: var(--color-dark-gray);
 }
 
 .logo-link2,
@@ -228,22 +267,26 @@
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
+    line-height: 31px;
     letter-spacing: 0.03em;
+    text-decoration: none;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .logo-link2 {
-    color: #fff;
+    color: var(--color-white);
 }
 
 .logo-link2 span {
-    color: #2196F3;
+    color: var(--color-blue);
 }
 
-.address-link a {
+.address-link {
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    text-decoration: none;
+    color: var(--color-white);
 }

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>WebStudio</title>
 </head>
 <body>
@@ -15,23 +15,23 @@
         <nav class="nav">
             <ul class="navigation">
                 <li>
-                    <a href="index.html">Студія</a>
+                    <a class="nav-link" href="index.html">Студія</a>
                 </li>
                 <li>
-                    <a href="portfolio.html">Портфоліо</a>
+                    <a class="nav-link current" href="portfolio.html">Портфоліо</a>
                 </li>
                 <li>
-                    <a href="#">Контакти</a>
+                    <a class="nav-link" href="#">Контакти</a>
                 </li>
             </ul>
         </nav> 
 
         <ul class="contacts">
             <li>
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
             <li>
-                <a href="tel:+380961111111">+38 096 111 11 11</a>
+                <a class="contact-link" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
         </ul>
     </header>
@@ -40,141 +40,76 @@
 
         <section class="products">
 
-            <div class="tabs">
+            <h1>Продукты</h1>
 
-                <ul class="tabs_items">
+            <ul class="tabs-items">
+                <li>
+                    <button class="btn-tabs" type="button">Усі</button>
+                </li>
+                <li>
+                    <button class="btn-tabs" type="button">Веб-сайти</button>
+                </li>
+                <li>
+                    <button class="btn-tabs" type="button">Додатки</button>
+                </li>
+                <li>
+                    <button class="btn-tabs" type="button">Дизайн</button>
+                </li>
+                <li>
+                    <button class="btn-tabs" type="button">Маркетинг</button>
+                </li>
+            </ul>
+
+            <div class="tabs-block">
+                <ul class="product-item">
                     <li>
-                        <input type="button" id="tab_01" value="Усі" checked>
+                        <img src="./images/laptop.jpg" alt="Questionnaires of people in a laptop" width="370" height="294">
+                        <h2 class="headings-product">Технокряк</h2>
+                        <p class="text-product">Веб-сайт</p>
                     </li>
                     <li>
-                        <input type="button" id="tab_02" value="Веб-сайти" checked>
+                        <img src="./images/basketball.jpg" alt="Basketball game" width="370" height="294">
+                        <h2 class="headings-product">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+                        <p class="text-product">Дизайн</p>
                     </li>
                     <li>
-                        <input type="button" id="tab_03" value="Додатки" checked>
+                        <img src="./images/restaurant.jpg" alt="Restaurant logo" width="370" height="294">
+                        <h2 class="headings-product">Ресторан <span lang="en">Seafood</span></h2>
+                        <p class="text-product">Додаток</p>
                     </li>
                     <li>
-                        <input type="button" id="tab_04" value="Дизайн" checked>
+                        <img src="./images/monitor.jpg" alt="Web site in the monitor" width="370" height="294">
+                        <h2 class="headings-product" lang="en">Inspiration has no Borders</h2>
+                        <p class="text-product">Веб-сайт</p>
                     </li>
                     <li>
-                        <input type="button" id="tab_05" value="Маркетинг" checked>
+                        <img src="./images/boxes.jpg" alt="Random item boxes" width="370" height="294">
+                        <h2 class="headings-product">Проєкт <span lang="en">Boxes</span></h2>
+                        <p class="text-product">Додаток</p>
+                    </li>
+                    <li>
+                        <img src="./images/headphones.jpg" alt="Headphones" width="370" height="294">
+                        <h2 class="headings-product">Проєкт <span lang="en">Prime</span></h2>
+                        <p class="text-product">Маркетинг</p>
+                    </li>
+                    <li>
+                        <img src="./images/book.jpg" alt="Book" width="370" height="294">
+                        <h2 class="headings-product">Видання <span lang="en">Limited Edition</span></h2>
+                        <p class="text-product">Дизайн</p>
+                    </li>
+                    <li>
+                        <img src="./images/label.jpg" alt="Label" width="370" height="294">
+                        <h2 class="headings-product">Проєкт <span lang="en">LAB</span></h2>
+                        <p class="text-product">Маркетинг</p>
+                    </li>
+                    <li>
+                        <img src="./images/laptop2.jpg" alt="Laptop with open website Crowing Business" width="370" height="294">
+                        <h2 class="headings-product" lang="en">Growing Business</h2>
+                        <p class="text-product">Додаток</p>
                     </li>
                 </ul>
-
-                <div id="tab_01" class="tabs-block">
-                    <ul>
-                        <li>
-                            <img src="./images/laptop.jpg" alt="Questionnaires of people in a laptop" width="370" height="294">
-                            <h3>Технокряк</h3>
-                            <p>Веб-сайт</p>
-                        </li>
-                        <li>
-                            <img src="./images/basketball.jpg" alt="Basketball game" width="370" height="294">
-                            <h3>Постер <span lang="en">New Orlean vs Golden Star</span></h3>
-                            <p>Дизайн</p>
-                        </li>
-                        <li>
-                            <img src="./images/restaurant.jpg" alt="Restaurant logo" width="370" height="294">
-                            <h3>Ресторан <span lang="en">Seafood</span></h3>
-                            <p>Додаток</p>
-                        </li>
-                        <li>
-                            <img src="./images/monitor.jpg" alt="Web site in the monitor" width="370" height="294">
-                            <h3 lang="en">Inspiration has no Borders</h3>
-                            <p>Веб-сайт</p>
-                        </li>
-                        <li>
-                            <img src="./images/boxes.jpg" alt="Random item boxes" width="370" height="294">
-                            <h3>Проєкт <span lang="en">Boxes</span></h3>
-                            <p>Додаток</p>
-                        </li>
-                        <li>
-                            <img src="./images/headphones.jpg" alt="Headphones" width="370" height="294">
-                            <h3>Проєкт <span lang="en">Prime</span></h3>
-                            <p>Маркетинг</p>
-                        </li>
-                        <li>
-                            <img src="./images/book.jpg" alt="Book" width="370" height="294">
-                            <h3>Видання <span lang="en">Limited Edition</span></h3>
-                            <p>Дизайн</p>
-                        </li>
-                        <li>
-                            <img src="./images/label.jpg" alt="Label" width="370" height="294">
-                            <h3>Проєкт <span lang="en">LAB</span></h3>
-                            <p>Маркетинг</p>
-                        </li>
-                        <li>
-                            <img src="./images/laptop2.jpg" alt="Laptop with open website Crowing Business" width="370" height="294">
-                            <h3 lang="en">Growing Business</h3>
-                            <p>Додаток</p>
-                        </li>
-                    </ul>
-                </div>
-
-                <div id="tab_02" class="tabs-block">
-                    <ul>
-                        <li>
-                            <img src="./images/laptop.jpg" alt="Questionnaires of people in a laptop" width="370" height="294">
-                            <h3>Технокряк</h3>
-                            <p>Веб-сайт</p>
-                        </li>
-                        <li>
-                            <img src="./images/monitor.jpg" alt="Web site in the monitor" width="370" height="294">
-                            <h3 lang="en">Inspiration has no Borders</h3>
-                            <p>Веб-сайт</p>
-                        </li>
-                    </ul>
-                </div>
-
-                <div id="tab_03" class="tabs-block">
-                    <ul>
-                        <li>
-                            <img src="./images/restaurant.jpg" alt="Restaurant logo" width="370" height="294">
-                            <h3>Ресторан <span lang="en">Seafood</span></h3>
-                            <p>Додаток</p>
-                        </li>
-                        <li>
-                            <img src="./images/boxes.jpg" alt="Random item boxes" width="370" height="294">
-                            <h3>Проєкт <span lang="en">Boxes</span></h3>
-                            <p>Додаток</p>
-                        </li>
-                        <li>
-                            <img src="./images/laptop2.jpg" alt="Laptop with open website Crowing Business" width="370" height="294">
-                            <h3 lang="en">Growing Business</h3>
-                            <p>Додаток</p>
-                        </li>
-                    </ul>
-                </div>
-
-                <div id="tab_04" class="tabs-block">
-                    <ul>
-                        <li>
-                            <img src="./images/basketball.jpg" alt="Basketball game" width="370" height="294">
-                            <h3>Постер <span lang="en">New Orlean vs Golden Star</span></h3>
-                            <p>Дизайн</p>
-                        </li>
-                        <li>
-                            <img src="./images/book.jpg" alt="Book" width="370" height="294">
-                            <h3>Видання <span lang="en">Limited Edition</span></h3>
-                            <p>Дизайн</p>
-                        </li>
-                    </ul>
-                </div>
-
-                <div id="tab_05" class="tabs-block">
-                    <ul>
-                        <li>
-                            <img src="./images/headphones.jpg" alt="Headphones" width="370" height="294">
-                            <h3>Проєкт <span lang="en">Prime</span></h3>
-                            <p>Маркетинг</p>
-                        </li>
-                        <li>
-                            <img src="./images/label.jpg" alt="Label" width="370" height="294">
-                            <h3>Проєкт <span lang="en">LAB</span></h3>
-                            <p>Маркетинг</p>
-                        </li>
-                    </ul>
-                </div>
             </div>
+
         </section>
     </main>
 
@@ -183,14 +118,14 @@
 
         <address>
         <ul class="contacts">
-            <li class="address-link">
-                <a href="https://goo.gl/maps/gp436E2HGxqJRgqg9" target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
+            <li>
+                <a class="address-link" href="https://goo.gl/maps/gp436E2HGxqJRgqg9" target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
             </li>
             <li>
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
             <li>
-                <a href="tel:+380961111111">+38 096 111 11 11</a>
+                <a class="contact-link" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
         </ul>
     </address>
